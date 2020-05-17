@@ -1,3 +1,5 @@
-import fun from "./js/scripts";
+import "./styles/styles.scss";
 
-fun("Anthony");
+// import { fun } from "./js/scripts";
+
+// console.log(fun("Nataly"));

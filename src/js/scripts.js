@@ -1,3 +1,5 @@
-const fun = (saludo) => alert("Hola " + saludo);
+const fun = (saludo) => {
+  return "Hola " + saludo;
+};
 
 export { fun };
