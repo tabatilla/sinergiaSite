@@ -1,9 +1,14 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
+  entry: {
+    main: "./src/index.js",
+    vendor: "./src/vendor.js",
+  },
   output: {
-    filename: "main.[contentHash].js",
+    filename: "[name].[contentHash].js",
   },
   module: {
     rules: [
@@ -27,7 +32,8 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [
           // 3 Creates `style` nodes from JS strings
-          "style-loader",
+          //"style-loader", // Inject css into Js
+          MiniCssExtractPlugin.loader, // Move css into another file
           // 2 Translates CSS into CommonJS
           "css-loader",
           // 1 Compiles Sass to CSS
@@ -43,6 +49,9 @@ module.exports = {
     }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ["**/*", "!favicon.ico"],
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contentHash].css",
     }),
   ],
 };
