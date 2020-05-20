@@ -1,2 +1,78 @@
-$secondary: #c6538c;
+$negro: #3c4245;
+$gris: #5f6769;
+$verde: #719192;
+$amarillo: #dfcdc3;
+$layout-breakpoint-md: 767.98px;
+
 @import "~bootstrap/scss/bootstrap";
+
+body {
+  background-color: #000000;
+}
+
+.btn-negro {
+  background-color: $negro;
+  color: $amarillo;
+  height: 42px;
+  width: 42px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.jumbo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media (max-width: $layout-breakpoint-md) {
+  .logo {
+    width: 120px;
+  }
+
+  .navbar {
+    height: 95px;
+    background-color: #ffffff;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0 3px 11px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 3px 11px 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 3px 11px 0;
+  }
+}
+
+// COLORES DEL TEMA
+
+.negro {
+  color: $negro;
+}
+
+.gris {
+  color: $gris;
+}
+
+.verde {
+  color: $verde;
+}
+
+.amarillo {
+  color: $amarillo;
+}
+
+.bg-negro {
+  background-color: $negro;
+}
+
+.bg-gris {
+  background-color: $gris;
+}
+
+.bg-verde {
+  background-color: $verde;
+}
+
+.bg-amarillo {
+  background-color: $amarillo;
+}
