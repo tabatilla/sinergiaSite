@@ -10,6 +10,11 @@ body {
   background-color: #000000;
 }
 
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
 .btn-negro {
   background-color: $negro;
   color: $amarillo;
@@ -40,6 +45,10 @@ body {
     box-shadow: rgba(0, 0, 0, 0.25) 0 3px 11px 0;
     -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 3px 11px 0;
     -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 3px 11px 0;
+  }
+
+  .logo-footer {
+    width: 150px;
   }
 }
 
