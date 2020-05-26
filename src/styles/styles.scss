@@ -4,11 +4,27 @@ $verde: #719192;
 $amarillo: #dfcdc3;
 $layout-breakpoint-md: 767.98px;
 
+$fuenteTitulo: "Cormorant Garamond", serif;
+$fuenteParrafo: "Lato", sans-serif;
+
 @import "~bootstrap/scss/bootstrap";
 
-// body {
-//   background-color: #000000;
-// }
+body {
+  font-family: $fuenteParrafo;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $fuenteTitulo;
+}
+
+p {
+  font-family: $fuenteParrafo;
+}
+
 h1 {
   margin-bottom: 3rem;
 }
@@ -65,7 +81,13 @@ section {
   }
 
   .logo-footer {
-    width: 150px;
+    width: 180px;
+  }
+
+  .footer {
+    span {
+      font-size: 1.3rem;
+    }
   }
 }
 
