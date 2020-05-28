@@ -4,8 +4,8 @@ $verde: #719192;
 $amarillo: #dfcdc3;
 $layout-breakpoint-md: 767.98px;
 
-$fuenteTitulo: "Cormorant Garamond", serif;
-$fuenteParrafo: "Lato", sans-serif;
+$fuenteTitulo: 'Fjalla One', sans-serif;
+$fuenteParrafo: 'Titillium Web', sans-serif;
 
 @import "~bootstrap/scss/bootstrap";
 
@@ -19,10 +19,6 @@ h3,
 h4,
 h5 {
   font-family: $fuenteTitulo;
-}
-
-p {
-  font-family: $fuenteParrafo;
 }
 
 h1 {
@@ -125,10 +121,14 @@ section {
   background-color: $amarillo;
 }
 .btn-theme {
-  border: 2px solid $amarillo;
-  padding: 1rem 3rem;
-  border-radius: 35px;
-  margin-top: 1rem;
+    border: 2px solid #719192;
+    padding: 0.8rem 3rem;
+    border-radius: 35px;
+    margin-top: 1rem;
+    background: #719192;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
 }
 .main-banner {
   height: 700px;
