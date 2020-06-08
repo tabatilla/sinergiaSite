@@ -56,19 +56,33 @@
   <section class="mision-vision">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3 col-xs-12 p-0">
-          <img class="img-fluid" src="images/quienes-somos.jpg" alt="">
+        <div class="col-md-4 col-xs-12 p-0">
+          <img class="img-fluid" src="images/bg-values.jpg" alt="">
         </div>
-        <div class="col-md-9 col-xs-12 bg-negro text-white">
-          <div class="p-5">
-            <h2>Misión</h2>
-            <p>Brindar bienes de calidad y servicios competitivos para el desarrollo de la inversión bajo un
-              enfoque de responsabilidad socio ambiental a nivel mundial.</p>
-            <h2>Visión</h2>
-            <p>Ser un equipo líder, innovador y dinámico de profesionales comprometidos por el desarrollo
-              sostenible.</p>
-            <h2>Valores</h2>
-            <p>Compromiso, calidad y responsabilidad</p>
+        <div class="col-md-8 col-xs-12 bg-gris text-white">
+          <div class="pt-4 list-values">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-6 col-xs-12">
+                <div class="box-values">
+                  <h2>Misión</h2>
+                  <p>Brindar bienes de calidad y servicios competitivos para el desarrollo de la inversión bajo un
+                    enfoque de responsabilidad socio ambiental a nivel mundial.</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <div class="box-values">
+                  <h2>Visión</h2>
+                  <p>Ser un equipo líder, innovador y dinámico de profesionales comprometidos por el desarrollo
+                    sostenible.</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <div class="box-values">
+                  <h2>Valores</h2>
+                  <p>Compromiso, calidad y responsabilidad</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -107,24 +121,24 @@
         Queremos ayudarle a conseguir sus objetivos. Cuéntenos sobre su proyecto
         y gustosos le responderemos lo más antes posible.
       </p>
-      <form>
-        <div class="form-group">
+      <form class="row" id="formulario">
+        <div class="form-group col-md-6 col-xs-12">
           <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" />
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-6 col-xs-12">
           <input type="text" class="form-control" name="empresa" id="empresa" placeholder="Empresa" />
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-6 col-xs-12">
           <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" />
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-6 col-xs-12">
           <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Teléfono" />
         </div>
-        <div class="form-group">
+        <div class="form-group col-12">
           <textarea type="text" class="form-control" rows="4" name="mensaje" id="mensaje"
             placeholder="Mensaje"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-theme">Enviar</button>
       </form>
     </div>
 
@@ -132,23 +146,30 @@
   <footer class="footer">
     <div class="container">
       <div class="row ">
-        <div class="col-6 d-flex align-items-center justify-content-center">
-          <div class="logo-footer">
-            <img class="w-100" src="./images/negro.svg" />
+        <div class="col-md-3 col-xs-12">
+          <div class="box-info-footer">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Pasaje Cusco 108 Vallecito Arequipa Arequipa Perú</p>
           </div>
         </div>
-        <div class="col text-center">
-          <h4>Encuéntranos</h4>
-          <p>Pasaje Cusco 108 Vallecito Arequipa Arequipa Perú</p>
-          <div class="d-flex justify-content-around">
-            <span><i class="fab fa-facebook-f"></i></span>
-            <span><i class="fab fa-whatsapp"></i></span>
+        <div class="col-md-3 col-xs-12">
+          <div class="box-info-footer">
+            <i class="far fa-envelope"></i>
+            <p>contacto@sinergiaconsultores.com</p>
           </div>
-          <div class="mt-2">
-            <h4>Contacto</h4>
-            <p>958 020 224 contacto@sinergiaconsultores.com</p>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <div class="box-info-footer">
+            <i class="fas fa-phone-alt"></i>
+            <p>+51 958 020 224</p>
           </div>
-
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <div class="box-info-footer redes-sociales">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <p>© 2020 Sinergia Consultores. Todos los derechos reservados.</p>
+          </div>
         </div>
       </div>
 

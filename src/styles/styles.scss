@@ -62,11 +62,8 @@ section {
   height: 100%;
 }
 .lista-servicios object{
-  width:150px;
+  width:100px;
   margin-bottom:1.5rem;
-}
-#Capa_1{
-  fill:red;
 }
 
 @media (max-width: $layout-breakpoint-md) {
@@ -154,4 +151,54 @@ section {
   transform: translate(-50%, -50%);
   color:#fff;
   font-size:3rem;
+}
+.list-values{
+  text-align:center;
+  .row .col-md-6:first-child{
+      border-right:1px solid $amarillo;
+  }
+  .box-values{
+    padding:3rem 0;
+  }
+  .box-values h2{
+    color:$amarillo;
+    font-size:2.5rem;
+  }
+  .box-values p{
+    font-size: 1.1rem;
+  }
+}
+#formulario{
+    background: #f1f1f1;
+    padding: 2rem;
+    border-radius: 1rem;
+
+input,textarea{
+  border: none;
+  border-bottom: 1px solid #719192;
+  border-radius: 0px;
+  background:transparent;
+}
+}
+footer{
+  background: #36836e;
+  color: #fff;
+  border-top: 0.5rem solid #00666b;
+  text-align:center;
+  .box-info-footer i {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color:#caf8ed;
+}
+.col-md-3{
+  padding:3rem 15px;
+  border-right:1px solid #379982;
+}
+.col-md-3:first-child{
+  border-left:1px solid #379982;
+}
+.redes-sociales i{
+  color:#ffd32c;
+  font-size:1.5rem;
+}
 }
