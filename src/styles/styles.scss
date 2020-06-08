@@ -138,5 +138,20 @@ section {
     color: #fff;
 }
 .main-banner {
-  height: 700px;
+  background-image:url(../images/Fondo1-1.png);
+  background-size:cover;
+}
+.overlay-banner{
+  height: 40rem;
+  background: rgba(60, 66, 69, 0.3);
+}
+.main-text-banner{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color:#fff;
+  font-size:3rem;
 }
